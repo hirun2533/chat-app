@@ -62,24 +62,7 @@ user: User;
 //   return user !== null;
 // }
 
-
-
 }
-
-
-// this.afAuth.authState.subscribe((user: any) => {
-//  if(user) {
-
-//   this.user = user;
-//   localStorage.setItem('user', JSON.stringify(this.user));
-//  }
-//  else {
-//    localStorage.setItem('user', null);
-//  }
-  
-// })
-
-
 
 
 export const AUTH_PROVIDERS: Array<any> = [
