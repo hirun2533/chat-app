@@ -14,14 +14,14 @@ user: User;
  constructor(public afAuth: AngularFireAuth, public router: Router) { }
 
 
-  // login(user: string, password: string): boolean {
-  //   if (user === 'chandlergegg@gmail.com' && password === 'csc436!') {
-  //     localStorage.setItem('username', user);
-  //     return true;
-  //   }
+  login(user: string, password: string): boolean {
+    if (user === 'chandlergegg@gmail.com' && password === 'csc436!') {
+      localStorage.setItem('username', user);
+      return true;
+    }
 
-  //   return false;
-  // }
+    return false;
+  }
 
   logout(): any {
     localStorage.removeItem('username');
@@ -36,20 +36,20 @@ user: User;
   }
 
 
-  login(email: string, password: string) : boolean{
+  // login(email: string, password: string) : boolean{
   
-    try{
-      this.afAuth.auth.signInWithEmailAndPassword(email, password)
-      // this.router.navigate(['username/lis']);
-      localStorage.setItem('username', email);
-    return true;
+  //   try{
+  //     this.afAuth.auth.signInWithEmailAndPassword(email, password)
+  //     // this.router.navigate(['username/lis']);
+  //     localStorage.setItem('username', email);
+  //   return true;
 
-    }
-    catch(e){
-      alert("Error!" + e.message);
-    }
-    return false;
-  }
+  //   }
+  //   catch(e){
+  //     alert("Error!" + e.message);
+  //   }
+  //   return false;
+  // }
 
 // async logout(){
 //   await this.afAuth.auth.signOut();
