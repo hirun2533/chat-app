@@ -8,7 +8,7 @@ Hirunya Hirunsirisombut
 https://github.com/hirun2533/chat-app
 
 FireBase Url.
-https://chat-app-b031f.web.app
+https://chat-app-b031f.firebaseapp.com
 
 2. Road blocks and challenges.
  
