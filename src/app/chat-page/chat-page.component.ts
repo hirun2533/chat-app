@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router} from '@angular/router';
+import { AuthService } from '../auth.service';
 @Component({
   selector: 'chat-page',
   templateUrl: './chat-page.component.html',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatPageComponent implements OnInit {
 
-  constructor() { }
 
+  constructor(public authService: AuthService, private router: Router) {
+  }
+
+   
   ngOnInit() {
+  }
+
+  logoutButton(): boolean {
+    this.authService.logout();
+    this.router.navigateByUrl('/login');
+    return false;
   }
 
 }

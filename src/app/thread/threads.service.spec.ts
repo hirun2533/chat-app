@@ -48,9 +48,5 @@ describe('ThreadsService', () => {
     messagesService.addMessage(m2);
     messagesService.addMessage(m3);
 
-    // => threads (1): Thread 1
-    // => threads (1): Thread 1
-    // => threads (2): Thread 1, Thread 2
-
   });
 });

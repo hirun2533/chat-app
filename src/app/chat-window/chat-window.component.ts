@@ -26,7 +26,7 @@ export class ChatWindowComponent implements OnInit {
   draftMessage: Message;
   currentUser: User;
   public show: boolean = false;
-  public buttonName: any = 'show';
+  public buttonName: any = 'click';
 
   constructor(public messagesService: MessagesService,
               public threadsService: ThreadsService,
@@ -76,15 +76,15 @@ export class ChatWindowComponent implements OnInit {
   scrollToBottom(): void {
     const scrollPane: any = this.el
       .nativeElement.querySelector('.msg-container-base');
-    // scrollPane.scrollTop = scrollPane.scrollHeight;
+       scrollPane.scrollTop = scrollPane.scrollHeight;
   }
   toggle(){
     this.show = !this.show;
 
     if(this.show)
-    this.buttonName = "Hide";
+    this.buttonName = "Collapse";
     else
-    this.buttonName = "Open";
+    this.buttonName = "OpenChat";
   }
 
 

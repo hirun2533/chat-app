@@ -1,7 +1,13 @@
 <div>
-  <chat-nav-bar></chat-nav-bar>
   <div class="container">
     <chat-threads></chat-threads>
+    <p class="navbar-text navbar-left">
+      <button class= "Stylelike" type="button" (click)="logoutButton()">
+        SignOut 
+        <span class="badge"></span>
+      </button></p>
+
+
     <chat-window></chat-window>
   </div>
 </div>
